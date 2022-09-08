@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <ImageView fitHeight="807.0" fitWidth="1092.0" layoutX="-175.0" layoutY="-87.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/background.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="373.0" fitWidth="562.0" layoutX="-3.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/shutterstock_1033155406-removebg-preview.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="320.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reducing Balance Basis Method" wrappingWidth="559.4999964907765">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Text>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0d305287" height="651.0" layoutX="-61.0" layoutY="-38.0" stroke="BLACK" strokeType="INSIDE" width="308.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0d305287" height="49.0" layoutX="248.0" layoutY="562.0" stroke="BLACK" strokeType="INSIDE" width="972.0" />
+        <Button layoutX="823.0" layoutY="23.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="66.0" text="Back" />
+        <Text layoutX="320.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost               " wrappingWidth="376.6708984375">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="320.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scrap Value    " wrappingWidth="376.6708984375">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="320.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Useful Life      " wrappingWidth="376.6708984375">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <TextField fx:id="costInput" layoutX="550.0" layoutY="86.0" prefHeight="30.0" prefWidth="255.0" />
+        <TextField fx:id="scarpValueInput" layoutX="548.0" layoutY="139.0" prefHeight="30.0" prefWidth="255.0" />
+        <TextField fx:id="yearsInput" layoutX="548.0" layoutY="189.0" prefHeight="30.0" prefWidth="255.0" />
+        <Button layoutX="611.0" layoutY="255.0" mnemonicParsing="false" onAction="#calMethod2" prefHeight="31.0" prefWidth="116.0" text="Calculate" />
+        <Button layoutX="741.0" layoutY="255.0" mnemonicParsing="false" onAction="#clearM2" prefHeight="31.0" prefWidth="66.0" text="Clear" />
+      <TableView fx:id="tableRBB" layoutX="320.0" layoutY="311.0" prefHeight="226.0" prefWidth="493.0">
+        <columns>
+          <TableColumn fx:id="yearRBBTbl" prefWidth="88.0" text="Year" />
+          <TableColumn fx:id="CValRBBTbl" prefWidth="217.0" text="Carrying Value" />
+            <TableColumn fx:id="DValRBBTbl" prefWidth="196.0" text="Depreciation" />
+        </columns>
+      </TableView>
+      <Text layoutX="320.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rate :" wrappingWidth="65.99999941885471">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="rateM2" layoutX="395.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="207.00000008568168">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="510.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="23.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="510.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="23.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="510.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="23.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

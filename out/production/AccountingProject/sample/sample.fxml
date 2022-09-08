@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+       <ImageView fitHeight="807.0" fitWidth="1092.0" layoutX="-175.0" layoutY="-87.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@../img/background.jpg" />
+           </image>
+       </ImageView>
+      <ImageView fitHeight="373.0" fitWidth="562.0" layoutX="-3.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/shutterstock_1033155406-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="436.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EasyDipreo" wrappingWidth="376.6708984375">
+         <font>
+            <Font name="MV Boli" size="50.0" />
+         </font>
+      </Text>
+      <Button layoutX="477.0" layoutY="268.0" mnemonicParsing="false" onAction="#loadWIn1" prefHeight="32.0" prefWidth="168.0" text="SLB Method" />
+      <Button layoutX="476.0" layoutY="339.0" mnemonicParsing="false" onAction="#loadWIn2" prefHeight="32.0" prefWidth="168.0" text="RBB Method" />
+      <Button layoutX="477.0" layoutY="421.0" mnemonicParsing="false" onAction="#loadWIn3" prefHeight="32.0" prefWidth="168.0" text="PUB Method" />
+      <Text layoutX="425.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Relavant Method" wrappingWidth="294.240234375">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0d305287" height="651.0" layoutX="-61.0" layoutY="-38.0" stroke="BLACK" strokeType="INSIDE" width="308.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0d305287" height="49.0" layoutX="248.0" layoutY="562.0" stroke="BLACK" strokeType="INSIDE" width="972.0" />
+   </children>
+</AnchorPane>

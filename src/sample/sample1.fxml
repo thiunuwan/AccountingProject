@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="807.0" fitWidth="1092.0" layoutX="-175.0" layoutY="-87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/background.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="373.0" fitWidth="562.0" layoutX="-3.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/shutterstock_1033155406-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="370.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Straight Line Basis Method" wrappingWidth="439.6708984375">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0d305287" height="651.0" layoutX="-61.0" layoutY="-38.0" stroke="BLACK" strokeType="INSIDE" width="308.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0d305287" height="49.0" layoutX="248.0" layoutY="562.0" stroke="BLACK" strokeType="INSIDE" width="972.0" />
+      <Button layoutX="806.0" layoutY="23.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="66.0" text="Back" />
+      <Text layoutX="370.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cost           " wrappingWidth="376.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="370.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scrap Value  " wrappingWidth="376.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="370.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Useful Life     " wrappingWidth="170.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="costInput" layoutX="550.0" layoutY="129.0" />
+      <TextField fx:id="scarpValueInput" layoutX="550.0" layoutY="176.0" />
+      <TextField fx:id="yearsInput" layoutX="550.0" layoutY="229.0" />
+      <Button layoutX="548.0" layoutY="297.0" mnemonicParsing="false" onAction="#calMethod1" prefHeight="31.0" prefWidth="116.0" text="Calculate" />
+      <Text layoutX="370.0" layoutY="399.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Depriciation per year " wrappingWidth="299.0000000856817">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="DpValueM1" layoutX="530.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="187.00000008568168">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="674.0" layoutY="297.0" mnemonicParsing="false" onAction="#clearM1" prefHeight="31.0" prefWidth="66.0" text="Clear" />
+      <Text layoutX="520.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="19.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="520.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="19.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="520.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="19.6708984375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
